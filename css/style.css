@@ -61,8 +61,12 @@ th {
     background-color: #4fa0e0;
     color: white;
 }
-.warning-class {
-    background-color: #f1bbbb;
+.warnings,.warnings th {
+    background-color: red;
+    color: #ffffff;
+}
+.warnings:hover {
+    background-color: lightcoral !important;
     color: #ffffff;
 }
 .ng-cloak { display:none; }
