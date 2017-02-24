@@ -1,0 +1,78 @@
+.date{
+    width: 30%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form-group label{
+    text-align: left;
+}
+.time{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    color: gray;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.error{
+    margin-top: 2rem;
+    background-color: red;
+    color: #FFF;
+    text-align: center;
+    padding: 1rem;
+}
+
+#busy {
+    display: none;
+    background: rgba(107, 104, 104, 0.62) url(images/ajax-loader.gif) no-repeat center center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0.5;
+}
+.time span{                
+    color: green;
+    font-weight: 500;
+}
+.marginBottom{
+    margin-bottom: 5%;
+}
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
+th {
+    background-color: #4fa0e0;
+    color: white;
+}
+.warning-class {
+    background-color: #f1bbbb;
+    color: #ffffff;
+}
+.ng-cloak { display:none; }
+#lockList {float:right}
+
+.datepickerdemoBasicUsage {
+    /** Demo styles for mdCalendar. */ }
+.datepickerdemoBasicUsage md-content {
+    padding-bottom: 200px; }
+.datepickerdemoBasicUsage .validation-messages {
+    font-size: 12px;
+    color: #dd2c00;
+    margin-left: 15px; }

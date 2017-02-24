@@ -1,0 +1,267 @@
+[ {
+  "RecordID" : "WE015963",
+  "riskFactors" : {
+    "restages" : 2,
+    "program" : 1,
+    "intersects" : 1
+  }
+}, {
+  "RecordID" : "WE015732",
+  "riskFactors" : {
+    "restages" : 4,
+    "program" : 12,
+    "intersects" : 0
+  }
+}, {
+  "RecordID" : "WE015729",
+  "riskFactors" : {
+    "restages" : 3,
+    "program" : 4,
+    "intersects" : 7
+  }
+}, {
+  "RecordID" : "WE015691",
+  "riskFactors" : {
+    "restages" : 5,
+    "program" : 22,
+    "intersects" : 21
+  }
+}, {
+  "RecordID" : "WE015741",
+  "riskFactors" : {
+    "restages" : 1,
+    "program" : 6,
+    "intersects" : 4
+  }
+}, {
+  "RecordID" : "WE015666",
+  "riskFactors" : {
+    "restages" : 3,
+    "program" : 48,
+    "intersects" : 7
+  }
+}, {
+  "RecordID" : "WE015627",
+  "riskFactors" : {
+    "restages" : 1,
+    "program" : 39,
+    "intersects" : 3
+  }
+}, {
+  "RecordID" : "WE015845",
+  "riskFactors" : {
+    "restages" : 2,
+    "program" : 11,
+    "intersects" : 0
+  }
+}, {
+  "RecordID" : "WE015844",
+  "riskFactors" : {
+    "restages" : 2,
+    "program" : 1,
+    "intersects" : 0
+  }
+}, {
+  "RecordID" : "WE015566",
+  "riskFactors" : {
+    "restages" : 1,
+    "program" : 4,
+    "intersects" : 0
+  }
+}, {
+  "RecordID" : "WE015528",
+  "riskFactors" : {
+    "restages" : 1,
+    "program" : 9,
+    "intersects" : 0
+  }
+}, {
+  "RecordID" : "WE015314",
+  "riskFactors" : {
+    "restages" : 1,
+    "program" : 11,
+    "intersects" : 0
+  }
+}, {
+  "RecordID" : "WE015064",
+  "riskFactors" : {
+    "restages" : 18,
+    "program" : 14,
+    "intersects" : 2
+  }
+}, {
+  "RecordID" : "WE015751",
+  "riskFactors" : {
+    "restages" : 3,
+    "program" : 5,
+    "intersects" : 2
+  }
+}, {
+  "RecordID" : "WE015747",
+  "riskFactors" : {
+    "restages" : 9,
+    "program" : 8,
+    "intersects" : 0
+  }
+}, {
+  "RecordID" : "WE015824",
+  "riskFactors" : {
+    "restages" : 1,
+    "program" : 1,
+    "intersects" : 0
+  }
+}, {
+  "RecordID" : "WE015905",
+  "riskFactors" : {
+    "restages" : 1,
+    "program" : 1,
+    "intersects" : 0
+  }
+}, {
+  "RecordID" : "WE015806",
+  "riskFactors" : {
+    "restages" : 1,
+    "program" : 1,
+    "intersects" : 0
+  }
+}, {
+  "RecordID" : "WE015803",
+  "riskFactors" : {
+    "restages" : 1,
+    "program" : 1,
+    "intersects" : 0
+  }
+}, {
+  "RecordID" : "WE015792",
+  "riskFactors" : {
+    "restages" : 1,
+    "program" : 1,
+    "intersects" : 0
+  }
+}, {
+  "RecordID" : "WE015779",
+  "riskFactors" : {
+    "restages" : 4,
+    "program" : 13,
+    "intersects" : 3
+  }
+}, {
+  "RecordID" : "WE015745",
+  "riskFactors" : {
+    "restages" : 6,
+    "program" : 7,
+    "intersects" : 1
+  }
+}, {
+  "RecordID" : "WE015728",
+  "riskFactors" : {
+    "restages" : 12,
+    "program" : 4,
+    "intersects" : 2
+  }
+}, {
+  "RecordID" : "WE015694",
+  "riskFactors" : {
+    "restages" : 5,
+    "program" : 20,
+    "intersects" : 5
+  }
+}, {
+  "RecordID" : "WE015754",
+  "riskFactors" : {
+    "restages" : 24,
+    "program" : 38,
+    "intersects" : 4
+  }
+}, {
+  "RecordID" : "WE015595",
+  "riskFactors" : {
+    "restages" : 9,
+    "program" : 15,
+    "intersects" : 2
+  }
+}, {
+  "RecordID" : "WE015629",
+  "riskFactors" : {
+    "restages" : 11,
+    "program" : 53,
+    "intersects" : 3
+  }
+}, {
+  "RecordID" : "WE015631",
+  "riskFactors" : {
+    "restages" : 4,
+    "program" : 11,
+    "intersects" : 4
+  }
+}, {
+  "RecordID" : "WE015698",
+  "riskFactors" : {
+    "restages" : 5,
+    "program" : 11,
+    "intersects" : 1
+  }
+}, {
+  "RecordID" : "WE015783",
+  "riskFactors" : {
+    "restages" : 13,
+    "program" : 4,
+    "intersects" : 0
+  }
+}, {
+  "RecordID" : "WE015737",
+  "riskFactors" : {
+    "restages" : 5,
+    "program" : 17,
+    "intersects" : 0
+  }
+}, {
+  "RecordID" : "WE015763",
+  "riskFactors" : {
+    "restages" : 2,
+    "program" : 1,
+    "intersects" : 0
+  }
+}, {
+  "RecordID" : "WE015821",
+  "riskFactors" : {
+    "restages" : 10,
+    "program" : 16,
+    "intersects" : 2
+  }
+}, {
+  "RecordID" : "WE015655",
+  "riskFactors" : {
+    "restages" : 3,
+    "program" : 5,
+    "intersects" : 1
+  }
+}, {
+  "RecordID" : "WE015971",
+  "riskFactors" : {
+    "restages" : 3,
+    "program" : 1,
+    "intersects" : 0
+  }
+}, {
+  "RecordID" : "WE015788",
+  "riskFactors" : {
+    "restages" : 2,
+    "program" : 2,
+    "intersects" : 0
+  }
+}, {
+  "RecordID" : "WE015724",
+  "riskFactors" : {
+    "restages" : 2,
+    "program" : 5,
+    "intersects" : 0
+  }
+}, {
+  "RecordID" : "WE015626",
+  "riskFactors" : {
+    "restages" : 16,
+    "program" : 44,
+    "intersects" : 0
+  }
+} ]

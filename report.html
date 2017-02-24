@@ -1,0 +1,81 @@
+<!Doctype html>
+<html ng-app="risk">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>QA Risk Factor</title>
+        <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/lib/jquery-ui/jquery-ui.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body  ng-controller="riskFactor" >
+        <div id="busy"></div>
+        <div class="container"ng-cloak>
+
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-8 mainPage"  >
+                    <h2 class="marginBottom">Work Effort Risk Factor</h2>
+                    <form  ng-submit="generateReport()">
+                        <div class="form-group">
+                            <label for="pwd">Load Date:</label>
+                            <input type="text" class="date" ng-model='endDate' datepicker ng-change="generateRiskFactor()"></select>
+
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> Caliculate Risk</button>
+                        </div>
+                    </form>
+            </div>
+
+        </div>
+        <div class="error" ng-if="errorMessage">{{errorMessage}}</div>
+        <div  ng-if="showTable" class="table-responsive">
+
+            <table class="table table-bordered table-hover table-condensed">
+                <caption style="font-size:140%;padding:5px;">Risk Matrix 
+                    <button id="lockList" ng-click="saveAsCsv()" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-download" aria-hidden="true"></span> 
+                        Save as CSV 
+                    </button>
+                </caption>
+                <thead>
+                    <tr class="success">
+                        <th>Work Efforts</th>
+                        <th>Restages</th>
+                        <th>Program count</th>
+                        <th>Intersects</th>
+                        <th>Jira observation</th>
+                        <th>Time Stamp</th>
+                        <th>Risk Percentage</th>
+
+                    </tr>
+                </thead>
+                <tr ng-repeat="report in reportData" ng-class="{warning: (report.Risk_Percentage>=70)}">
+                    <th class="success">{{ report.RecordID }}</th>
+                    <td>{{ report.Restages }}</td>
+                    <td>{{ report.Program_Count }}</td>
+                    <td>{{ report.Intersects }}</td>
+                    <td>{{ report.Jira_Observations }}</td>
+                    <td>{{ report.TimeStamp }}</td>
+                    <td>{{ report.Risk_Percentage }}%</td>
+
+                </tr>
+
+            </table>
+        </div>
+
+
+        </div>
+    <div ng-if="showTable" >
+        <div id="piechart" style="height: 600px; margin-right: auto; margin-left: auto"></div>
+    </div>
+
+    </body>   
+<script src="/js/lib/jquery-2.2.4.min.js"></script>
+<script src="/js/lib/jquery-ui.js"></script>
+<script src="/js/lib/angular.min.js"></script>
+<script src="/js/lib/loader.js"></script>
+<script src="/js/report.js"></script>
+
+</html>

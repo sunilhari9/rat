@@ -1,0 +1,76 @@
+<!Doctype html>
+<html ng-app="report">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Report</title>
+        <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/lib/jquery-ui/jquery-ui.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div id="busy"></div>
+        <div class="container" ng-controller="workEfforts" ng-cloak="">
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-8 mainPage"  >
+                    <h2 class="marginBottom">Work Effort Report</h2>
+                    <form  ng-submit="generateReport()">
+
+                        <div class="form-group">
+                            <label for="pwd">Load Date:</label><br>
+                            <input type="text" class="date" ng-model='endDate' datepicker ng-change="updateList()"></select>
+                        </div>    
+                    <div class="form-group">
+                        <label for="pwd">WE List:</label><br>
+                        <select class="date" ng-model='weRecord' ng-options="weSort.RecordID for weSort in WESortedList"></select>
+                    </div>
+
+                    <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+            </div>
+
+        </div>
+        <div class="error" ng-if="errorMessage">{{errorMessage}}</div>
+        <div  ng-if="showTable">
+            <table>
+                <caption style="font-size:140%;padding:5px;">Risk Matrix 
+                    <button id="lockList" ng-click="saveAsCsv()" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-download" aria-hidden="true"></span> 
+                        Save as CSV 
+                    </button>
+                </caption>
+                <tr>
+                    <th>Record ID</th>
+                    <th>Total QA Hr</th>
+                    <th>Functional QA Hr</th>
+                    <th>Functional Dev Hr</th>
+                    <th>Functional SCM Hr</th>
+                    <th>Highest QA hrs</th>
+                    <th>Highest Non QA hrs</th>
+                    <th>Time Stamp</th>
+
+                </tr>
+                <tr ng-repeat="report in reportData" ng-class="{'warning-class': report.timeStamp >= 6}">
+                    <td>{{ report.RecordID }}</td>
+                    <td>{{ report.Total_QA_Hours }}</td>
+                    <td>{{ report.Actual_Test_Queue }}</td>
+                    <td>{{ report.Actual_Dev_Queue }}</td>
+                    <td>{{ report.Actual_SCM_Queue }}</td>
+                    <td>{{ report.Highest_QA_Hrs }}</td>
+                    <td>{{ report.Highest_NonQA_Hrs }}</td>
+                    <td>{{ report.timeStamp}}</td>
+                </tr>
+
+            </table>
+        </div>
+        </div>
+    </body>
+<script   src="/js/lib/jquery-2.2.4.min.js"></script>
+<script src="/js/lib/jquery-ui.js"></script>
+<script src="/js/lib/angular.min.js"></script>
+<script src="/js/app.js"></script>
+
+</html>
