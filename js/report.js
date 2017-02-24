@@ -28,8 +28,8 @@ app.controller("riskFactor",function($scope,$http){
     $scope.reportData="";
     $scope.generateRiskFactor =function(){
         $("#busy").show();
-        var historyUrl= "data/riskFactor.json";
-       // var historyUrl= "http://pslimsapp/slims/api/services/riskscoring/factor?from="+$scope.endDate;
+        //var historyUrl= "data/riskFactor.json";
+       var historyUrl= "http://pslimsapp/slims/api/services/riskscoring/factor?from="+$scope.endDate;
         /* var dateAr = $scope.endDate.split('-');
         var WeDateFormated = dateAr[1] + '/' + dateAr[2] + '/' + dateAr[0];*/
         $http.get(historyUrl)
@@ -261,8 +261,8 @@ app.controller("riskFactor",function($scope,$http){
     $scope.generateReport=function(){
         $("#busy").show();
         var WESortedList = [];
-        var weURl= "data/we.json";
-        //var weURl= "http://pslimsapp/slims/api/services/riskscoring/history?from="+$scope.endDate;
+        //var weURl= "data/we.json";
+        var weURl= "http://pslimsapp/slims/api/services/riskscoring/history?from="+$scope.endDate;
         var dateAr = $scope.endDate.split('-');
         var WeDateFormated = dateAr[1] + '/' + dateAr[2] + '/' + dateAr[0];
         $http.get(weURl).then(function(response) {

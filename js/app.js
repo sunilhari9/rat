@@ -31,8 +31,8 @@ app.controller("workEfforts", function($scope, $http) {
 
     $scope.updateList = function() {
         $("#busy").show();
-        var historyUrl= "data/we.json";
-        //var historyUrl= "http://pslimsapp/slims/api/services/riskscoring/history?from="+$scope.endDate;
+        //var historyUrl= "data/we.json";
+        var historyUrl= "http://pslimsapp/slims/api/services/riskscoring/history?from="+$scope.endDate;
         var dateAr = $scope.endDate.split('-');
         var WeDateFormated = dateAr[1] + '/' + dateAr[2] + '/' + dateAr[0];
         $http.get(historyUrl)
